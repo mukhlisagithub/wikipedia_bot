@@ -9,8 +9,9 @@
 
 from telegram import Update
 from telegram.ext import Updater, CallbackContext, CommandHandler
+from settings import *
 
-updater = Updater(token="6036684924:AAEYUZsmnBetTmOnsOusbc83tGtdzZmH3ZE", use_context=True)  # shu tokenni ish;lat degani
+updater = Updater(token=TELEGRAM_TOKEN, use_context=True)  # shu tokenni ish;lat degani
 
 def start(update: Update, context: CallbackContext):
     update.message.reply_text('Hello New Bot')
